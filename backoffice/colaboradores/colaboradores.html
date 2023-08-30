@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../estoque_geral.css">
+    <link rel="stylesheet" type="text/css" href="colaboradores.css">
+
+</head>
+<body>
+    <div id="topoJanela" class="topoJanela">
+        <div></div>
+        <div>Colaboradores</div>
+        <div>
+            <img src="../img/add.svg" id="btnAdd" class="btnMainOper" title="Adicionar novo Colaborador" alt="">
+        </div>
+    </div>
+
+    <div id="novoColaborador" class="popUp ocultarPopup">
+       <div class="janelaPouUp">
+        <div class="tituloPopUp">
+            <div>Novo Colaborador</div>
+            <img src="../img//close.svg" class="btnJanelaOper" id="btnFecharPopup" alt="fechar">
+        </div>
+        <div class="corpoPopUp">
+            <div class="campoForm">
+                <label>Nome Colaborador</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="campoForm">
+                <label>Tipo Colaborador</label>
+                <select type="text" id="tipo_colaborador"  name="tipo_colaborador">
+                    <option>teste</option>
+                </select>
+            </div>
+            <div class="campoForm">
+                <label>Status</label>
+                <select type="text" id="s_status"  name="status">
+                    <option value="A">Ativo</option>
+                    <option value="I">Inativo</option>
+                </select>
+            </div>
+            <div class="campoForm">
+                <label>Foto</label>
+                <input type="file" id="foto" name="foto" accept="image/png, image/jpeg, image/jpg">
+            </div> 
+            <div class="campoForm2">  
+                <img src='#' id="imgFoto" class="imgFoto"/>
+            </div>
+            <div class="campoForm">
+                <label>Telefone</label>
+                <input type="text" id="telefone"  name="telefone">
+                <div id="telefones"  class="telefones">
+                    <!-- <div class="tel">
+                        <div class="numTel">(43) 32365-3632</div>
+                        <img src="../img/lixeira.svg" class="delTel" alt="Apagar">
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="rodapePopUp">
+            <button id="btnGravarPopup" class="btnComandoPopup">Gravar</button>
+            <button id="btnCancelarPopup" class="btnComandoPopup">Cancelar</button>
+        </div>
+       </div>
+    </div>
+
+    <div id="grid" class="grid">
+        <div id="tituloGrig" class="tituloGrid">
+            <div class="colunaTituloGrid c1">ID</div>
+            <div class="colunaTituloGrid c2">Nome</div>
+            <div class="colunaTituloGrid c3">Tipo</div>
+            <div class="colunaTituloGrid c4">Status</div>       
+            <div class="colunaTituloGrid c5">Operações</div>           
+        </div>
+        <div id="dadosGrid" class="dadosGrid">
+            <!--<div class="linhaGrid">
+                <div class="colunaLinhaGrid c1">ID</div>
+                <div class="colunaLinhaGrid c2">Nome</div>
+                <div class="colunaLinhaGrid c3">Tipo</div>
+                <div class="colunaLinhaGrid c4">Status</div>       
+                <div class="colunaLinhaGrid c5">Operações</div>          
+            </div>-->
+        </div>
+    </div>
+
+
+    <script src="../../estoque_geral.js" type="module"></script>
+    <script src="colaboradores.js" type="module"></script>
+
+</body>
+</html>

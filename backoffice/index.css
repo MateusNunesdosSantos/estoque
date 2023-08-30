@@ -1,0 +1,22 @@
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--azul-principal);
+    color: #fff;
+    height: 40px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
