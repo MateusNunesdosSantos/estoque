@@ -50,6 +50,21 @@ fetch(endpoint_todosusuarios)
         divc5.setAttribute("class","colunaLinhaGrid c5");
         divlinha.appendChild(divc5);
 
+        const imgStatus=document.createElement("img");
+        imgStatus.setAttribute("src","../img/toggle_on.svg");
+        imgStatus.setAttribute("class","iconeOp");
+        divc5.appendChild(imgStatus);
+
+        const imgEditar=document.createElement("img");
+        imgEditar.setAttribute("src","../img/edit.svg");
+        imgEditar.setAttribute("class","iconeOp");
+        divc5.appendChild(imgEditar);
+
+        const imgDelete=document.createElement("img");
+        imgDelete.setAttribute("src","../img/lixeira.svg");
+        imgDelete.setAttribute("class","iconeOp");
+        divc5.appendChild(imgDelete);
+
         dadosGrid.appendChild(divlinha)
     });
 })
